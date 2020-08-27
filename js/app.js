@@ -16,6 +16,7 @@ function AddTask(e){
 
     if(taskInput.value == ''){
         alert('Insert a task name');
+        return;
     }
 
     const li = document.createElement('li');
