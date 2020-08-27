@@ -1,4 +1,3 @@
 # Task List
-Simple task list using vanilla JavaScript and Local Storage
-
--Under development
+Simple task list using JavaScript
+Include Local Storage
