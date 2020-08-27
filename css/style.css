@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+    --black: #363636;
+    --white: #f4f4f4;
+    --green: #7EDD76;
+    --red: #EC5656;
+    --white-grey: #EBEBEB;
+    --dark-grey: #616161;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+form{
+    display: flex;
+}
+
+input{
+    padding: 0.5rem;
+}
+
+input:focus{
+    outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    border-bottom: var(--dark-grey) solid 1px;
+}
+
+li:last-child{
+    border-bottom: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.container{
+    max-width: 400px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.task-title{
+    background-color: var(--black);
+    color: var(--white);
+    padding: .3rem 0;
+    text-align: center;
+    margin: 0;
+}
+
+.task-input{
+    width: 80%;
+    background-color: var(--white-grey);
+    border: none;
+}
+
+.task-submit{
+    width: 20%;
+    border: none;
+    background-color: var(--green);
+    color: var(--black);
+}
+
+.tasks-header{
+    display: flex;
+}
+
+.tasks-header .task-title{
+    width: 80%;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.tasks-header .clear-all{
+    width: 20%;
+    background-color: var(--dark-grey);
+    border: none;
+    color: var(--white-grey);
+}
+
+.task-item{
+    display: flex;
+}
+
+.task-item .task-item-name{
+    width: 80%;
+    background-color: var(--white-grey);
+    padding: .5rem;
+}
+
+.task-item .delete-task-item{
+    width: 20%;
+    text-align: center;
+    background-color: var(--red);
+    padding: .5rem;
+}
