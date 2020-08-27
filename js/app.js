@@ -59,7 +59,7 @@ function CreateTaskOnDOM(taskName){
 
     p.innerText = taskName;
 
-    a.href = '#'
+    a.href = '#';
     a.innerText = 'x';
 
     li.appendChild(p);
@@ -98,7 +98,7 @@ function LoadLocalStorage(){
     if(localStorage.getItem('tasks') != null){
         let tasks = JSON.parse(localStorage.getItem('tasks'));
         tasks.forEach(function(task){
-            CreateTaskOnDOM(task)
+            CreateTaskOnDOM(task);
         });
     }
 }
@@ -108,6 +108,6 @@ function ClearAllLocalStorage(){
         localStorage.clear();
     }
     else{
-        alert('No tasks to remove')
+        alert('No tasks to remove');
     }
 }
