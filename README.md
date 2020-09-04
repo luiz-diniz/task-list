@@ -1,4 +1,6 @@
 # Task List
 Simple task list using JavaScript
 
-Include Local Storage
+- Include your own tasks
+- Delete tasks
+- Local Storage included
